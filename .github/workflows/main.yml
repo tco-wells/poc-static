@@ -30,4 +30,4 @@ jobs:
         ls -la ~/.log
         cd ~/.log
         ls -la .
-        aws s3 sync log.txt s3://${{ secrets.AWS_BUCKET_NAME }}
+        aws s3 cp log.txt s3://${{ secrets.AWS_BUCKET_NAME }}
