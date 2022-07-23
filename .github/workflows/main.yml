@@ -19,6 +19,7 @@ jobs:
         ls -la ~/
         mkdir ~/.log
         printf "Hello\nWorld\n" > ~/.log/log.txt
+        ls -la ~/.log
     # Here you could add some building steps if you were dealing with some angular/react/Vue...
     # - name: Build static site
     #  run: yarn install && npm run-script build
