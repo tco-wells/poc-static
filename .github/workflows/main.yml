@@ -28,4 +28,6 @@ jobs:
         mkdir ~/.log
         printf "Hello\nWorld\n" > ~/.log/log.txt
         ls -la ~/.log
-        aws s3 sync ~/.log/log.txt s3://${{ secrets.AWS_BUCKET_NAME }}
+        cd ~/.log
+        ls -la .
+        aws s3 sync log.txt s3://${{ secrets.AWS_BUCKET_NAME }}
